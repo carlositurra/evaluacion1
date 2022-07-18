@@ -1,4 +1,4 @@
-package com.generation.carlos.models;
+package com.generation.perro.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,25 +7,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Acreedores")
-public class Acreedor {
-    
-    //atributos
+@Table(name = "perros")
+public class Perro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
-    private String apellido;
-
-    //constructores
-    public Acreedor() {
+    public Perro() {
     }
-    public Acreedor(Long id, String nombre, String apellido) {
+    public Perro(Long id, String nombre) {
         this.id = id;
         this.nombre = nombre;
-        this.apellido = apellido;
     }
-    //getters y setters
     public Long getId() {
         return id;
     }
@@ -38,11 +31,7 @@ public class Acreedor {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String getApellido() {
-        return apellido;
-    }
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    } 
+
+    
     
 }

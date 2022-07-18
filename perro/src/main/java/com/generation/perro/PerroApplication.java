@@ -1,13 +1,13 @@
-package com.generation.carlos;
+package com.generation.perro;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CarlosApplication {
+public class PerroApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CarlosApplication.class, args);
+		SpringApplication.run(PerroApplication.class, args);
 	}
 
 }
